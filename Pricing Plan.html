@@ -1,465 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Pricing Plan | BistroConnect</title>
 
-       
-  <title>Pricing Plan</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <!-- Favicon -->
+  <link href="assets/img/bistroconnect-removebg-preview.png" rel="icon">
 
-  <!-- Favicons -->
-  <!-- <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  <!-- Google Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Platypi&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet"> -->
-
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Platypi:ital,wght@0,300..800;1,300..800&family=Tapestry&display=swap" rel="stylesheet"> -->
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Bruno+Ace&family=Estonia&family=Libre+Barcode+128+Text&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Tapestry&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- service page <link rel="stylesheet" href=""> -->
-  <link href="services.html">
-
-  <!-- =======================================================
-  * Template Name: Ninestars
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    .logo img {
+      height: 70px;
+    }
+    .pricing-plan {
+      transition: transform 0.3s ease-in-out;
+      border-radius: 10px;
+    }
+    .pricing-plan:hover {
+      transform: translateY(-8px);
+    }
+    .price {
+      color: #00465f;
+    }
+    .featured {
+      background: linear-gradient(135deg, #fffbe6, #fff0c2);
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top d-flex align-items-center bg-white shadow-sm">
+  <div class="container d-flex align-items-center justify-content-between">
+    <div class="logo">
+      <a href="index.html"><img src="assets/img/bistroconnect-removebg-preview.png" alt="BistroConnect Logo" class="img-fluid"></a>
+    </div>
+    <nav id="navbar" class="navbar">
+      <ul class="d-flex align-items-center list-unstyled mb-0">
+        <li><a class="nav-link px-3" href="index.html">Home</a></li>
+        <li><a class="nav-link px-3" href="about us.html">About Us</a></li>
+        <li><a class="nav-link px-3" href="trendings.html">Trendings</a></li>
+        <li><a class="nav-link px-3" href="team.html">Team</a></li>
+        <li class="dropdown position-relative px-3">
+          <a href="services.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu position-absolute mt-1">
+            <li><a class="dropdown-item" href="food tech.html">Food Tech Services</a></li>
+            <li><a class="dropdown-item" href="Tech Parteners.html">Tech Platforms</a></li>
+            <li><a class="dropdown-item" href="BistroBootOps.html">BistroBootOps</a></li>
+            <li><a class="dropdown-item" href="Kitchen Launch Programme.html">Kitchen Launch Programme</a></li>
+            <li><a class="dropdown-item" href="Brand Packages.html">Brand Packages</a></li>
+            <li><a class="dropdown-item" href="tech pateners.html">Tech Partners</a></li>
+            <li><a class="dropdown-item" href="BistroConnect Terms & Conditionss.html">Terms & Conditions</a></li>
+            <li><a class="dropdown-item" href="Post Your Rquirements.html">Post Your Requirements</a></li>
+            <li><a class="dropdown-item" href="Pricing Plan.html">Pricing Plan</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link px-3" href="Contact.html">Contact</a></li>
+        <li><a class="btn btn-outline-primary ms-3" href="about us.html">Get Started</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-      <div class="logo">
-        <!-- <a href="index.html"><img src="assets/img/imgs/sfri-consul-name-.svg" style="width: 130%;height: 595%;color: #00465f;" alt="Shri consultancy"></a> -->
-         
-        <h1 class="text-light"><a href="index.html"><span style="font-family: Platypi;color: #00465f;"><img src="assets/img/bistroconnect-removebg-preview.png" height="740"; width="190" alt="" class="img-fluid"></a></h1>
-           <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <span style="font-family: Brake;color: #00465f;"></span> -->
-       <!-- <a href="index.html"><img src="assets/img/bistroconnect.jpeg" height="340"; width="90" alt="" class="img-fluid"></a>-->
-      </div>
-  <!-- <a href="index.html"><img src="assets/img/bistroconnect.jpeg" height="340"; width="90" alt="" class="img-fluid"></a>  -->
- 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="about us.html">About Us</a></li>
-          
-          <li><a class="nav-link scrollto" href="trendings.html">Trendings</a></li>
-        <li><a class="nav-link scrollto" href="team.html">Team</a></li>
-          <li class="dropdown"><a href="services.html"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="food tech.html">Food Tech Services</a></li>
-              <li class="dropdown"><a href="Tech Parteners.html"><span>TechPlatforms</span> </a>
-             
-              </li>
-              <li><a href="BistroBootOps.html">BistroBootOps</a></li>
-              <li><a href="Kitchen Launch Programme.html">Kitchen Launch Programme</a></li>
-              <li><a href="Brand Packages.html">Brand Packages</a></li>
-              <li><a href="tech pateners.html">Tech Pateners</a></li>
+<!-- ======= Hero Section ======= -->
+<section class="pt-5 mt-5 text-center">
+  <div class="container">
+    <h1 class="fw-bold" style="color: #00465f;">Explore Our Pricing Plans</h1>
+    <p class="lead" style="color: #054f6aa5;">Tailored solutions for every business size and need</p>
+  </div>
+</section>
 
-              <li><a href="BistroConnect Terms & Conditionss.html">BistroConnect Terms & Conditionss</a></li>
-              <li><a href="Post Your Rquirements.html">Post Your Rquirements</a></li>
-              <li><a href="Pricing Plan.html">Pricing Plan</a></li>
+<!-- ======= Pricing Section ======= -->
+<main id="main">
+  <section class="py-5 bg-light" id="pricing">
+    <div class="container" data-aos="fade-up">
+      <div class="row g-4">
+
+        <!-- START Looping Pricing Cards -->
+        <!-- You can customize icons, colors, or features for each -->
+        <!-- Example Cards -->
+
+        <!-- Visit Charges -->
+        <div class="col-md-4">
+          <div class="card shadow p-4 text-center pricing-plan h-100">
+            <i class="bi bi-house-door fs-1 text-primary mb-3"></i>
+            <h5>Visit Charges</h5>
+            <p class="price h3 fw-bold">₹999</p>
+            <ul class="list-unstyled">
+              <li>✔ Email Support</li>
+              <li>✔ Basic Features</li>
             </ul>
-          </li> 
-          <li><a class="nav-link scrollto" href="Contact.html">Contact</a></li>
-          <li><a class="getstarted scrollto" href="about us.html">Get Started</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1 style="color: #06222bc1;">Let's Know More About Our Pricing Plans</h1>
-         
-        
-        </div>
-      
-      </div>
-    </div>
-
-  </section><!-- End Hero --><br><br><br>
-
-  <main id="main">
-
-   
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <b> <title>Pricing Plans</title></b>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-        <style>
-            .pricing-plan {
-                text-align: center;
-                border: 1px solid #ddd;
-                padding: 20px;
-                border-radius: 10px;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                margin: 20px;
-            }
-            .pricing-plan h2 {
-                margin-bottom: 15px;
-            }
-            .pricing-plan .price {
-                font-size: 24px;
-                font-weight: bold;
-                margin-bottom: 15px;
-            }
-            .pricing-plan ul {
-                list-style: none;
-                padding: 0;
-            }
-            .pricing-plan ul li {
-                margin: 10px 0;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <h1 class="text-center my-4">Our Pricing Plans</h1>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="pricing-plan">
-                        <h2>Visit Charges</h2>
-                        <div class="price">₹ 999</div>
-                        <ul>
-                           
-                            <li>✔ Email Support</li>
-                            <li>✔ Basic Features</li>
-                        </ul>
-                        <button class="btn btn-primary">Choose Plan</button>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="pricing-plan">
-                        <h2>BistroConnect Direct</h2>
-                        <div class="price">₹ 999</div>
-                        <ul>
-                           >
-                            <li>✔ Priority Support</li>
-                            <li>✔ Standard Features</li>
-                        </ul>
-                        <button class="btn btn-success">Choose Plan</button>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="pricing-plan">
-                      <h2>Weekly Session</h2>
-                      <div class="price">₹ 6999</div>
-                      <ul>
-                        
-                          <li>✔ Priority Support</li>
-                          <li>✔ Standard Features</li>
-                      </ul>
-                      <button class="btn btn-success">Choose Plan</button>
-                  </div>
-              </div>
-              <div class="col-md-4">
-                <div class="pricing-plan">
-                    <h2>Royalty Per Product</h2>
-                    <div class="price">₹ 29</div>
-                    <ul>
-                       
-                        <li>✔ Priority Support</li>
-                        <li>✔ Standard Features</li>
-                    </ul>
-                    <button class="btn btn-success">Choose Plan</button>
-                </div>
-            </div>
-            <div class="col-md-4">
-              <div class="pricing-plan">
-                  <h2>BistroMeastro Management Solutions</h2>
-                  <div class="price">₹24,999</div>
-                  <ul>
-                      <li>✔ Priority Support</li>
-                      <li>✔ Standard Features</li>
-                  </ul>
-                  <button class="btn btn-success">Choose Plan</button>
-              </div>
+            <a href="#contact" class="btn btn-outline-primary">Choose Plan</a>
           </div>
-          <div class="col-md-4">
-            <div class="pricing-plan">
-                <h2>BistroBoost</h2>
-                <div class="price">₹ 9,999</div>
-                <ul>
-         
-                    <li>✔ Priority Support</li>
-                    <li>✔ Standard Features</li>
-                </ul>
-                <button class="btn btn-success">Choose Plan</button>
-            </div>
+        </div>
+
+        <!-- BistroConnect Direct -->
+        <div class="col-md-4">
+          <div class="card shadow p-4 text-center pricing-plan h-100">
+            <i class="bi bi-broadcast fs-1 text-danger mb-3"></i>
+            <h5>BistroConnect Direct</h5>
+            <p class="price h3 fw-bold">₹999</p>
+            <ul class="list-unstyled">
+              <li>✔ Priority Support</li>
+              <li>✔ Standard Features</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline-danger">Choose Plan</a>
+          </div>
+        </div>
+
+        <!-- Weekly Session -->
+        <div class="col-md-4">
+          <div class="card shadow p-4 text-center pricing-plan h-100">
+            <i class="bi bi-calendar-week fs-1 text-success mb-3"></i>
+            <h5>Weekly Session</h5>
+            <p class="price h3 fw-bold">₹6,999</p>
+            <ul class="list-unstyled">
+              <li>✔ Strategic Guidance</li>
+              <li>✔ 1-on-1 Support</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline-success">Choose Plan</a>
+          </div>
+        </div>
+
+        <!-- Royalty Per Product -->
+        <div class="col-md-4">
+          <div class="card shadow p-4 text-center pricing-plan h-100">
+            <i class="bi bi-box-seam fs-1 text-warning mb-3"></i>
+            <h5>Royalty Per Product</h5>
+            <p class="price h3 fw-bold">₹29</p>
+            <ul class="list-unstyled">
+              <li>✔ Chefless Model</li>
+              <li>✔ Scalable</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline-warning">Choose Plan</a>
+          </div>
+        </div>
+
+        <!-- BistroMeastro -->
+        <div class="col-md-4">
+          <div class="card shadow p-4 text-center pricing-plan h-100">
+            <i class="bi bi-diagram-3 fs-1 text-secondary mb-3"></i>
+            <h5>BistroMeastro Management</h5>
+            <p class="price h3 fw-bold">₹24,999</p>
+            <ul class="list-unstyled">
+              <li>✔ Full Management</li>
+              <li>✔ Staff & System</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline-secondary">Choose Plan</a>
+          </div>
+        </div>
+
+        <!-- BistroBoost -->
+        <div class="col-md-4">
+          <div class="card shadow p-4 text-center pricing-plan h-100">
+            <i class="bi bi-graph-up-arrow fs-1 text-info mb-3"></i>
+            <h5>BistroBoost</h5>
+            <p class="price h3 fw-bold">₹9,999</p>
+            <ul class="list-unstyled">
+              <li>✔ Menu Engineering</li>
+              <li>✔ Cost Optimization</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline-info">Choose Plan</a>
+          </div>
+        </div>
+
+        <!-- Kitchen Launch Packages -->
+        <div class="col-md-4">
+          <div class="card shadow p-4 text-center pricing-plan featured h-100">
+            <i class="bi bi-fire fs-1 text-dark mb-3"></i>
+            <h5>Kitchen Launch Basic</h5>
+            <p class="price h3 fw-bold">₹85,000</p>
+            <ul class="list-unstyled">
+              <li>✔ Kitchen Plan</li>
+              <li>✔ Vendor Assistance</li>
+            </ul>
+            <a href="#contact" class="btn btn-dark">Choose Plan</a>
+          </div>
         </div>
 
         <div class="col-md-4">
-          <div class="pricing-plan">
-              <h2>Kitchen Launch Basic</h2>
-              <div class="price">₹ 85,000</div>
-              <ul>
-           
-                  <li>✔ Priority Support</li>
-                  <li>✔ Standard Features</li>
-              </ul>
-              <button class="btn btn-success">Choose Plan</button>
-          </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="pricing-plan">
-            <h2>Kitchen Launch Pro</h2>
-            <div class="price">₹ 1,50,000</div>
-            <ul>
-      
-                <li>✔ Priority Support</li>
-                <li>✔ Standard Features</li>
+          <div class="card shadow p-4 text-center pricing-plan h-100">
+            <i class="bi bi-cup-straw fs-1 text-danger mb-3"></i>
+            <h5>Kitchen Launch Pro</h5>
+            <p class="price h3 fw-bold">₹1,50,000</p>
+            <ul class="list-unstyled">
+              <li>✔ Full Setup</li>
+              <li>✔ Training & SOPs</li>
             </ul>
-            <button class="btn btn-success">Choose Plan</button>
+            <a href="#contact" class="btn btn-outline-danger">Choose Plan</a>
+          </div>
         </div>
-    </div>
-    <div class="col-md-4">
-      <div class="pricing-plan">
-          <h2>Burger Brand</h2>
-          <div class="price">₹ 2,25,000</div>
-          <ul>
-  
-              <li>✔ Priority Support</li>
-              <li>✔ Standard Features</li>
-          </ul>
-          <button class="btn btn-success">Choose Plan</button>
+
+        <!-- Brand Launches -->
+        <div class="col-md-4">
+          <div class="card shadow p-4 text-center pricing-plan h-100">
+            <i class="bi bi-hamburger fs-1 text-primary mb-3"></i>
+            <h5>Burger Brand</h5>
+            <p class="price h3 fw-bold">₹2,25,000</p>
+            <ul class="list-unstyled">
+              <li>✔ Brand + Kitchen</li>
+              <li>✔ SOPs + Menu</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline-primary">Choose Plan</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow p-4 text-center pricing-plan h-100">
+            <i class="bi bi-bowl-rice fs-1 text-success mb-3"></i>
+            <h5>Indo-Chinese Pan Asian</h5>
+            <p class="price h3 fw-bold">₹2,49,000</p>
+            <ul class="list-unstyled">
+              <li>✔ Fusion Menu Setup</li>
+              <li>✔ Training + Equipment</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline-success">Choose Plan</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow p-4 text-center pricing-plan h-100">
+            <i class="bi bi-bag-heart fs-1 text-secondary mb-3"></i>
+            <h5>Indian QSR Brand</h5>
+            <p class="price h3 fw-bold">₹1,99,999</p>
+            <ul class="list-unstyled">
+              <li>✔ Regional Flavors</li>
+              <li>✔ Fast-service Model</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline-secondary">Choose Plan</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow p-4 text-center pricing-plan h-100">
+            <i class="bi bi-shop-window fs-1 text-dark mb-3"></i>
+            <h5>Indian Restaurant Setup</h5>
+            <p class="price h3 fw-bold">₹9,25,000</p>
+            <ul class="list-unstyled">
+              <li>✔ Turnkey Project</li>
+              <li>✔ Interior + Kitchen</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline-dark">Choose Plan</a>
+          </div>
+        </div>
+
+        <!-- Insight Plans -->
+        <div class="col-md-4">
+          <div class="card shadow p-4 text-center pricing-plan h-100">
+            <i class="bi bi-bar-chart-line fs-1 text-info mb-3"></i>
+            <h5>BistroConnect Insights Basic</h5>
+            <p class="price h3 fw-bold">₹1,399</p>
+            <ul class="list-unstyled">
+              <li>✔ Reports + Dashboard</li>
+              <li>✔ PDF Downloads</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline-info">Choose Plan</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow p-4 text-center pricing-plan h-100">
+            <i class="bi bi-bar-chart-steps fs-1 text-warning mb-3"></i>
+            <h5>BistroConnect Pro+</h5>
+            <p class="price h3 fw-bold">₹3,25,000</p>
+            <ul class="list-unstyled">
+              <li>✔ Full AI Dashboard</li>
+              <li>✔ Smart Alerts</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline-warning">Choose Plan</a>
+          </div>
+        </div>
+
+        <!-- END Cards -->
       </div>
-  </div>
-  <div class="col-md-4">
-    <div class="pricing-plan">
-        <h2>Indo-Chinese Pan Asian Brand</h2>
-        <div class="price">₹ 2,49,000</div>
-        <ul>
-            
-            <li>✔ Priority Support</li>
-            <li>✔ Standard Features</li>
-        </ul>
-        <button class="btn btn-success">Choose Plan</button>
     </div>
-</div>
-<div class="col-md-4">
-  <div class="pricing-plan">
-      <h2>Indian QSR Brand</h2>
-      <div class="price"> ₹ 1,99,999</div>
-      <ul>
-          
-          <li>✔ Priority Support</li>
-          <li>✔ Standard Features</li>
-      </ul>
-      <button class="btn btn-success">Choose Plan</button>
+  </section>
+</main>
+
+<!-- ======= Footer ======= -->
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p class="mb-0">© 2025 <strong>TFCS Kitchen Solutions Ltd.</strong> All Rights Reserved.</p>
+    <small>Email: <a href="mailto:info@chef-hire.in" class="text-warning">info@chef-hire.in</a> | Phone: 022-69710332</small>
   </div>
-</div>
-<div class="col-md-4">
-  <div class="pricing-plan">
-      <h2>Indian Restaurant Kitchen Setup</h2>
-      <div class="price">₹ 9,25,000</div>
-      <ul>
-          
-          <li>✔ Priority Support</li>
-          <li>✔ Standard Features</li>
-      </ul>
-      <button class="btn btn-success">Choose Plan</button>
-  </div>
-</div>
-<div class="col-md-4">
-  <div class="pricing-plan">
-      <h2>BistroConnect Insights Basic</h2>
-      <div class="price">₹ 1,399</div>
-      <ul>
-          
-          <li>✔ Priority Support</li>
-          <li>✔ Standard Features</li>
-      </ul>
-      <button class="btn btn-success">Choose Plan</button>
-  </div>
-</div>
-<div class="col-md-4">
-  <div class="pricing-plan">
-      <h2>BistroConnect Pro+</h2>
-      <div class="price">₹ 3,25,000</div>
-      <ul>
-          
-          <li>✔ Priority Support</li>
-          <li>✔ Standard Features</li>
-      </ul>
-      <button class="btn btn-success">Choose Plan</button>
-  </div>
-</div>
+</footer>
 
-            
-            </div>
-        </div>
-  
-    
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 
-
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-newsletter">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-6">
-                <h4>Join Our Newsletter</h4>
-                <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                <form action="" method="post">
-                  <input type="email" name="email"><input type="submit" value="Subscribe">
-                </form>
-              </div>
-            </div>
-          </div>
-        </div> 
-    
-        <div class="footer-top">
-          <div class="container">
-            <div class="row">
-    
-              <div class="col-lg-3 col-md-6 footer-contact">
-                <h3 id="contact" style=" font-family: Georgia, 'Times New Roman', Times, serif;color: #00465f;">Contact</h3>
-                <p >
-                  TFCS kitchen solutions Indore MP<br><br>
-                  
-                  <strong>Phone:</strong> 022-69710332<br>
-                  <strong>Email:</strong> Email: info@chef-hire.in<br>
-                </p>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 footer-links">
-                <h4 style="color: #00465f;">Useful Links</h4>
-                <ul>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                </ul>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 footer-links">
-                <h4 style="color: #00465f;">Resources</h4>
-                <h6><b>Business</b></h6>
-                <h7><u>List of documents</u></h7><br>
-                <ul>
-                  <li></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="assets/housingloan.pdf">Housing </a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="assets/unsecuredloan.pdf">Business &</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="assets/machineryloan.pdf">Setup</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="assets/personalloan.pdf">Chefs</a></li>
-                  <!-- <li><i class="bx bx-chevron-right"></i> <a href="assets/businessloan.pdf">Business Loan</a></li> -->
-                </ul>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 footer-links">
-                
-                <div>
-                  <a href="index.html">
-                    <div class="logo">
-                        <img src="https://static.wixstatic.com/media/193ba3_5fa71c45b8ab4621851ff6116c352063~mv2.png/v1/fill/w_546,h_546,al_c,lg_1,q_85,enc_avif,quality_auto/WhatsApp_Image_2023-09-19_at_18_43_49__1_-removebg-preview.png" height="190" width="190">
-                    </div>
-                </a>
-             
-    
-            
-                  <a href="#" ><h4 style="color: #06222bc1;width: 355px;">"Empowering dreams, shaping futures - <br> where expertise meets excellence in every financial endeavor."</h4></i></a>
-                  
-                </div>
-              </div> 
-    
-    
-              <div class="col-lg-3 col-md-6 footer-links">
-                <h4>Our Services</h4>
-                <ul>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">Cafe Setup</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">Studio setup</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">Interiar</a></li>
-                </ul>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 footer-links">
-                <h4>Our Social Networks</h4>
-                <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-                <div class="social-links mt-3">
-                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                  <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                  <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                  <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                </div>
-              </div> 
-    
-            </div>
-          </div>
-        </div>
-    
-       <div class="container py-4">
-          <div class="copyright">
-            &copy; Copyright <strong><span>TFCS kitchen Solutions</span></strong>. All Rights Reserved
-          </div>
-          <div class="credits"> 
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/ -->
-            <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
-        </div> 
-      </footer>
-      <!-- End Footer -->
-    
-      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-    
-      <!-- Vendor JS Files -->
-      <script src="assets/vendor/aos/aos.js"></script>
-      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-      <script src="assets/vendor/php-email-form/validate.js"></script>
-    
-      <!-- Template Main JS File -->
-      <script src="assets/js/main.js"></script>
-    
-    </body>
-    
-    </html>
+</body>
+</html>
