@@ -656,11 +656,15 @@ section {
   display: inline-block;
   padding: 8px 28px;
   border-radius: 13px;
-  transition: 0.5s;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
   margin-top: 30px;
   color: #fff;
   background: #e7d03f;
-}
+  padding: 12px 24px;
+} 
 
 .b1:hover {
   background: #ef7f4d;
