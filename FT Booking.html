@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food Tech Services | Chef-Hire</title>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .hero-yellow {
+      background: linear-gradient(to right, #fff8e1, #fffde7);
+      padding: 100px 0 60px 0;
+      text-align: center;
+    }
+
+    .hero-yellow h1 {
+      color: #f4a900;
+      font-weight: bold;
+    }
+
+    .hero-yellow p {
+      color: #333;
+      font-size: 18px;
+    }
+
+    .section-title h2 {
+      color: #f4a900;
+      font-weight: 700;
+    }
+
+    .php-email-form {
+      background-color: #fffdf5;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .php-email-form input,
+    .php-email-form select,
+    .php-email-form textarea {
+      border-radius: 8px;
+      border: 1px solid #ffe082;
+    }
+
+    .php-email-form button {
+      background-color: #f4a900;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .php-email-form button:hover {
+      background-color: #d38f00;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Include -->
+  <!-- Copy your existing header HTML here -->
+
+  <!-- Hero Banner -->
+  <section class="hero-yellow">
+    <div class="container">
+      <h1>Book Your Food Tech Services</h1>
+      <p>Empowering F&B brands with smart kitchen tech, POS solutions, and operational systems.</p>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="container my-5">
+    <div class="section-title text-center">
+      <h2>Service Booking Form</h2>
+      <p class="text-muted">Fill out the form and our tech consultant will connect with you shortly.</p>
+    </div>
+    <form action="submit-form.php" method="post" class="php-email-form mt-4">
+      <div class="row">
+        <div class="col-md-6 form-group mb-3">
+          <label>Your Name</label>
+          <input type="text" name="name" class="form-control" required>
+        </div>
+        <div class="col-md-6 form-group mb-3">
+          <label>Your Email</label>
+          <input type="email" name="email" class="form-control" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 form-group mb-3">
+          <label>Phone Number</label>
+          <input type="tel" name="phone" class="form-control" required>
+        </div>
+        <div class="col-md-6 form-group mb-3">
+          <label>Select Service</label>
+          <select class="form-control" name="service" required>
+            <option value="">-- Choose a Service --</option>
+            <option value="POS Integration">POS Integration</option>
+            <option value="Kitchen Automation">Kitchen Automation</option>
+            <option value="Inventory & Billing">Inventory & Billing Systems</option>
+            <option value="Menu Engineering Dashboard">Menu Engineering Dashboard</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group mb-3">
+        <label>Preferred Date</label>
+        <input type="date" name="date" class="form-control" required>
+      </div>
+      <div class="form-group mb-3">
+        <label>Additional Notes</label>
+        <textarea name="message" class="form-control" rows="4" placeholder="Tell us more about your needs..."></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit">Book Now</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer Include -->
+  <!-- Copy your existing footer HTML here -->
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

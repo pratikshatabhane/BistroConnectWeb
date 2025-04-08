@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brand Packages Booking | BistroConnect</title>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .hero-yellow {
+      background: linear-gradient(to right, #fff8e1, #fffde7);
+      padding: 100px 0 60px 0;
+      text-align: center;
+    }
+
+    .hero-yellow h1 {
+      color: #f4a900;
+      font-weight: bold;
+    }
+
+    .hero-yellow p {
+      color: #333;
+      font-size: 18px;
+    }
+
+    .section-title h2 {
+      color: #f4a900;
+      font-weight: 700;
+    }
+
+    .php-email-form {
+      background-color: #fffdf5;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .php-email-form input,
+    .php-email-form select,
+    .php-email-form textarea {
+      border-radius: 8px;
+      border: 1px solid #ffe082;
+    }
+
+    .php-email-form button {
+      background-color: #f4a900;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .php-email-form button:hover {
+      background-color: #d38f00;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Include -->
+  <!-- Paste your existing header/navigation menu here -->
+
+  <!-- Hero Section -->
+  <section class="hero-yellow">
+    <div class="container">
+      <h1>Book Brand Packages</h1>
+      <p>Launch your QSR, Indo-Chinese, Indian brand, or kitchen with end-to-end brand creation & setup.</p>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="container my-5">
+    <div class="section-title text-center">
+      <h2>Brand Setup Inquiry</h2>
+      <p class="text-muted">Fill in your vision — we'll bring your concept to life.</p>
+    </div>
+    <form action="submit-form.php" method="post" class="php-email-form mt-4">
+      <div class="row">
+        <div class="col-md-6 form-group mb-3">
+          <label>Full Name</label>
+          <input type="text" name="name" class="form-control" required>
+        </div>
+        <div class="col-md-6 form-group mb-3">
+          <label>Email Address</label>
+          <input type="email" name="email" class="form-control" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 form-group mb-3">
+          <label>Phone Number</label>
+          <input type="tel" name="phone" class="form-control" required>
+        </div>
+        <div class="col-md-6 form-group mb-3">
+          <label>Choose Your Brand Type</label>
+          <select class="form-control" name="brand_type" required>
+            <option value="">-- Select Brand Package --</option>
+            <option value="QSR / Burger Brand">QSR / Burger Brand</option>
+            <option value="Indo-Chinese Cuisine Brand">Indo-Chinese Cuisine Brand</option>
+            <option value="Indian QSR (North/South)">Indian QSR (North/South)</option>
+            <option value="End-to-End Kitchen Setup">End-to-End Kitchen Setup</option>
+            <option value="Full Brand + Kitchen Package">Full Brand + Kitchen Package</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group mb-3">
+        <label>Launch City / Region</label>
+        <input type="text" name="location" class="form-control" placeholder="e.g., Mumbai, Indore, Delhi NCR" required>
+      </div>
+      <div class="form-group mb-3">
+        <label>Launch Timeline</label>
+        <input type="text" name="timeline" class="form-control" placeholder="e.g., Within 1 Month, 3 Months, Undecided">
+      </div>
+      <div class="form-group mb-3">
+        <label>Tell Us About Your Concept</label>
+        <textarea name="message" class="form-control" rows="5" placeholder="E.g., Menu style, theme, dine-in/takeaway, franchise goal, etc."></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit">Submit Inquiry</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer Include -->
+  <!-- Paste your footer code here -->
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

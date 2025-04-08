@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kitchen Launch Basic | BistroConnect</title>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .hero-yellow {
+      background: linear-gradient(to right, #fff8e1, #fffde7);
+      padding: 100px 0 60px 0;
+      text-align: center;
+    }
+
+    .hero-yellow h1 {
+      color: #f4a900;
+      font-weight: bold;
+    }
+
+    .hero-yellow p {
+      color: #333;
+      font-size: 18px;
+    }
+
+    .section-title h2 {
+      color: #f4a900;
+      font-weight: 700;
+    }
+
+    .php-email-form {
+      background-color: #fffdf5;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .php-email-form input,
+    .php-email-form select,
+    .php-email-form textarea {
+      border-radius: 8px;
+      border: 1px solid #ffe082;
+    }
+
+    .php-email-form button {
+      background-color: #f4a900;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .php-email-form button:hover {
+      background-color: #d38f00;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Include -->
+  <!-- Paste your existing menu bar/header HTML here -->
+
+  <!-- Hero Section -->
+  <section class="hero-yellow">
+    <div class="container">
+      <h1>Kitchen Launch Basic</h1>
+      <p>For Small & Mid-Size Outlets – Budget-friendly, quick-to-launch, and professionally executed kitchen setups.</p>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="container my-5">
+    <div class="section-title text-center">
+      <h2>Book Your Kitchen Launch</h2>
+      <p class="text-muted">Fill in your details and let's kickstart your outlet setup journey.</p>
+    </div>
+    <form action="submit-form.php" method="post" class="php-email-form mt-4">
+      <div class="row">
+        <div class="col-md-6 form-group mb-3">
+          <label>Full Name</label>
+          <input type="text" name="name" class="form-control" required>
+        </div>
+        <div class="col-md-6 form-group mb-3">
+          <label>Email Address</label>
+          <input type="email" name="email" class="form-control" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 form-group mb-3">
+          <label>Phone Number</label>
+          <input type="tel" name="phone" class="form-control" required>
+        </div>
+        <div class="col-md-6 form-group mb-3">
+          <label>Business Type</label>
+          <select class="form-control" name="type" required>
+            <option value="">-- Select --</option>
+            <option value="Takeaway Outlet">Takeaway Outlet</option>
+            <option value="Small Café">Small Café</option>
+            <option value="Cloud Kitchen">Cloud Kitchen</option>
+            <option value="Quick Service Restaurant (QSR)">QSR</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group mb-3">
+        <label>Preferred Launch Date</label>
+        <input type="date" name="launch_date" class="form-control" required>
+      </div>
+      <div class="form-group mb-3">
+        <label>Location / City</label>
+        <input type="text" name="location" class="form-control" placeholder="e.g., Indore, Delhi, Mumbai" required>
+      </div>
+      <div class="form-group mb-3">
+        <label>Brief Your Concept</label>
+        <textarea name="message" class="form-control" rows="4" placeholder="Tell us about your kitchen goals, menu, or business idea."></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit">Submit Booking</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer Include -->
+  <!-- Paste your existing footer HTML here -->
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
