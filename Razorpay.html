@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plan Payment | BistroConnect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #f3f8fd, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      max-width: 500px;
+      width: 100%;
+      padding: 30px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 26px;
+      color: #0d3b66;
+      margin-bottom: 10px;
+    }
+
+    .logo img {
+      height: 60px;
+      margin-bottom: 15px;
+    }
+
+    input, select {
+      padding: 10px;
+      width: 100%;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .btn-pay {
+      padding: 12px 30px;
+      font-size: 16px;
+      background-color: #d1db12;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+    }
+
+    .btn-pay:hover {
+      background-color: #0056b3;
+    }
+
+    .plan-description {
+      font-size: 14px;
+      color: #444;
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    .price-display {
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="logo">
+      <img src="assets/img/bistroconnect-removebg-preview.png" height="400" width="100" alt="BistroConnect Logo ">
+    </div>
+    <h2>Select a Plan & Enter Details</h2>
+
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="email" id="email" placeholder="Your Email" required />
+    <input type="tel" id="phone" placeholder="Your Phone Number" required />
+
+    <select id="plan-select" onchange="updatePrice()">
+      <option value="999">Basic – ₹999</option>
+      <option value="1499">Premium – ₹1499</option>
+      <option value="2499">Elite – ₹2499</option>
+    </select>
+
+    <div class="plan-description" id="plan-description">
+      Basic plan includes 1-hour home chef visit and simple menu assistance.
+    </div>
+
+    <div class="price-display">Amount: ₹<span id="price-display">999</span></div>
+
+    <button class="btn-pay" onclick="payNow()">Pay Now</button>
+  </div>
+
+  <!-- Razorpay Script -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script>
+    const descriptions = {
+      '999': 'Basic plan includes 1-hour home chef visit and simple menu assistance.',
+      '1499': 'Premium plan includes 2-hour chef visit, menu consultation, and ingredient planning.',
+      '2499': 'Elite plan includes 3-hour session, customized menu, and dining experience setup.'
+    };
+
+    function updatePrice() {
+      const select = document.getElementById("plan-select");
+      const price = select.value;
+      document.getElementById("price-display").innerText = price;
+      document.getElementById("plan-description").innerText = descriptions[price];
+    }
+
+    function payNow() {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const amount = parseInt(document.getElementById("plan-select").value) * 100;
+
+      if (!name || !email || !phone) {
+        alert("Please fill all the details before proceeding.");
+        return;
+      }
+
+      const options = {
+        key: "rzp_live_gD6D6uqNgr07Xx", // Replace with your Razorpay key
+        amount: amount,
+        currency: "INR",
+        name: "BistroConnect",
+        description: "Service Plan Payment",
+        image: "https://yourdomain.com/assets/img/bistroconnect-logo.png",
+        handler: function (response) {
+          alert("✅ Payment Successful!\nPayment ID: " + response.razorpay_payment_id);
+        },
+        prefill: {
+          name: name,
+          email: email,
+          contact: phone
+        },
+        theme: {
+          color: "#007bff"
+        }
+      };
+
+      const rzp = new Razorpay(options);
+      rzp.open();
+    }
+  </script>
+
+</body>
+</html>
