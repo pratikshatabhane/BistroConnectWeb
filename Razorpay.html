@@ -91,8 +91,20 @@
 
     <select id="plan-select" onchange="updatePrice()">
       <option value="999">Basic – ₹999</option>
+      <option value="999">Basic – ₹1,399</option>
       <option value="1499">Premium – ₹1499</option>
-      <option value="2499">Elite – ₹2499</option>
+      <option value="2499">Elite –  ₹2499</option>
+      <option value="6999">Elite –  ₹6,999</option>
+      <option value="24999">Elite –  ₹24,999</option>
+      <option value="9999">Elite –  ₹9,999</option>
+      <option value="85000">Elite –  ₹85,000</option>
+      <option value="150000">Elite –  ₹1,50,000</option>
+      <option value="225000">Elite –  ₹2,25,000</option>
+      <option value="249000">Elite –  ₹2,49,000</option>
+
+      <option value="199999">Elite – ₹1,99,999</option>
+      <option value="925000">Elite –₹9,25,000</option>
+    
     </select>
 
     <div class="plan-description" id="plan-description">
@@ -109,8 +121,22 @@
   <script>
     const descriptions = {
       '999': 'Basic plan includes 1-hour home chef visit and simple menu assistance.',
+      '1,399': 'Basic plan includes 1-hour home chef visit and simple menu assistance.',
       '1499': 'Premium plan includes 2-hour chef visit, menu consultation, and ingredient planning.',
-      '2499': 'Elite plan includes 3-hour session, customized menu, and dining experience setup.'
+      '2499': 'Elite plan includes 3-hour session, customized menu, and dining experience setup.',
+      '6,999': 'Elite plan includes 3-hour session, customized menu, and dining experience setup.',
+      '24,999': 'Elite plan includes 3-hour session, customized menu, and dining experience setup.',
+       '9,999': 'Elite plan includes 3-hour session, customized menu, and dining experience setup.',
+        '85,000': 'Elite plan includes 3-hour session, customized menu, and dining experience setup.',
+         '1,50,000': 'Elite plan includes 3-hour session, customized menu, and dining experience setup.',
+          '2,25,000': 'Elite plan includes 3-hour session, customized menu, and dining experience setup.',
+           '2,49,000': 'Elite plan includes 3-hour session, customized menu, and dining experience setup.',
+            '1,99,999': 'Elite plan includes 3-hour session, customized menu, and dining experience setup.',
+             '9,25,000': 'Elite plan includes 3-hour session, customized menu, and dining experience setup.',
+              '3,25,000': 'Elite plan includes 3-hour session, customized menu, and dining experience setup.'
+            
+  
+   
     };
 
     function updatePrice() {
@@ -132,7 +158,7 @@
       }
 
       const options = {
-        key: "rzp_live_gD6D6uqNgr07Xx", // Replace with your Razorpay key
+        key: "rzp_live_gD6D6uqNgr07Xx", 
         amount: amount,
         currency: "INR",
         name: "BistroConnect",
